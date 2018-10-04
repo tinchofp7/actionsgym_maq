@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/miRutina.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="assets/js/effects.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="menu">
+        <span class="logo"><i class="fab fa-autoprefixer"></i></span>
+        <span class="exit" onclick="window.open('index.html', '_self')"><i class="fas fa-sign-out-alt"></i></span> 
+        <div class="burger-icon" onclick="openMenu()">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+    </div>
+
+    <div class="menu-lateral">
+        <i class="fas fa-times" onclick="closeMenu()"></i>
+        <div class="image">
+                <i class="fas fa-question"></i>
+        </div>
+        <ul>
+            <li onclick="window.open('home.html', '_self')">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </li>
+            <li>
+                <i class="fas fa-user"></i>
+                <span>Perfil</span>
+            </li>
+            <li>
+                <i class="fas fa-dumbbell"></i>
+                <span>Rutinas</span>
+            </li>
+            <li>
+                <i class="fas fa-dollar-sign"></i>
+                <span>Pagos</span>
+            </li>
+            <li>
+                <i class="fas fa-store"></i>
+                <span>Store</span>
+            </li>
+            <li>
+                <i class="fas fa-question"></i>
+                <span>FAQ</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="banner">
+            <button class="accordion">Semana 1</button>
+            <div class="panel">
+                    <ul>
+                            <li>
+                                  <a href="#">Día 1</a>
+                            </li>
+                            <li>
+                                  <a href="#">Día 2</a>
+                            </li>
+                            <li>
+                                  <a href="#">Día 3</a>
+                            </li>
+                          </ul>
+            </div>
+            
+            <button class="accordion" style="color: green;">Semana 2 (ACTUAL)</button>
+            <div class="panel">
+                    <ul>
+                            <li>
+                                  <a href="/primerdia.html" style="color: green;">Día 1 (ACTUAL)</a>
+                            </li>
+                            <li>
+                                  <a href="#">Día 2</a>
+                            </li>
+                            <li>
+                                  <a href="#">Día 3</a>
+                            </li>
+                          </ul>
+            </div>
+            
+            <button class="accordion">Semana 3</button>
+            <div class="panel">
+              <ul>
+                <li>
+                      <a href="#">Día 1</a>
+                </li>
+                <li>
+                      <a href="#">Día 2</a>
+                </li>
+                <li>
+                      <a href="#">Día 3</a>
+                </li>
+              </ul>
+            </div>
+    </div>
+    <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+            </script> 
+</body>
+</html>
