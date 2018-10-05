@@ -8,11 +8,11 @@ $font: 'Anton', sans-serif;
 .home {
     background-image: url('../img/fondo6.jpg');
     background-size: auto 120%;
-    /* background-position: 0 50%; */
+    background-position: 0 -75px;
     background-repeat: no-repeat;  
     position: absolute;
     top: 75px;
-    height: calc(100vh - 75px);
+    height: calc(600px - 75px);
     width: 100%;
     p{
         text-transform: uppercase;
@@ -24,14 +24,14 @@ $font: 'Anton', sans-serif;
         top: 0%;
         right: 0%;
         width: 50%;
-        height: 100%;
+        height: 525px;
         text-align: left;
         font-family: arial;
         font-size: 80px;
         margin: 0;
         padding: 0;
-        padding-top: 5px;
         opacity: 1;
+        
     }
     p:last-child {
         mix-blend-mode: normal;
@@ -39,6 +39,7 @@ $font: 'Anton', sans-serif;
         background: none;
         box-shadow: 0 0 16px #000, 0 0 32px #000;
       }
+      
     h1 {
         background-color: #fff;
         color: #000;
