@@ -59,66 +59,9 @@
     </div>
 
     <div class="banner">
-            <button class="accordion">Semana 1</button>
-            <div class="panel">
-                    <ul>
-                            <li>
-                                  <a href="#">Día 1</a>
-                            </li>
-                            <li>
-                                  <a href="#">Día 2</a>
-                            </li>
-                            <li>
-                                  <a href="#">Día 3</a>
-                            </li>
-                          </ul>
-            </div>
-            
-            <button class="accordion" style="color: green;">Semana 2 (ACTUAL)</button>
-            <div class="panel">
-                    <ul>
-                            <li>
-                                  <a href="/primerdia.html" style="color: green;">Día 1 (ACTUAL)</a>
-                            </li>
-                            <li>
-                                  <a href="#">Día 2</a>
-                            </li>
-                            <li>
-                                  <a href="#">Día 3</a>
-                            </li>
-                          </ul>
-            </div>
-            
-            <button class="accordion">Semana 3</button>
-            <div class="panel">
-              <ul>
-                <li>
-                      <a href="#">Día 1</a>
-                </li>
-                <li>
-                      <a href="#">Día 2</a>
-                </li>
-                <li>
-                      <a href="#">Día 3</a>
-                </li>
-              </ul>
-            </div>
+            <button class="accordion">Día 1</button>            
+            <button class="accordion" style="color: green;">Día 2 (ACTUAL)</button>            
+            <button class="accordion">Día 3</button>
     </div>
-    <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-            
-            for (i = 0; i < acc.length; i++) {
-              acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight){
-                  panel.style.maxHeight = null;
-                } else {
-                  panel.style.maxHeight = panel.scrollHeight + "px";
-                } 
-              });
-            }
-            </script> 
 </body>
 </html>

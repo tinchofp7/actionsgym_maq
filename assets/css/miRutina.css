@@ -185,7 +185,6 @@ body {
   background-color: #ccc; }
 
 .accordion:after {
-  content: '\002B';
   color: #777;
   font-weight: bold;
   float: right;
@@ -202,8 +201,3 @@ body {
   -webkit-transition: max-height 0.2s ease-out;
   -o-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out; }
-
-li {
-  list-style: none;
-  text-align: center;
-  font-size: 30px; }
