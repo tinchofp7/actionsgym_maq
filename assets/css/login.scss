@@ -7,10 +7,13 @@ $font: 'Righteous', cursive;
     margin: 0;
     font-family: $font;
 }
+*:focus {
+    outline: none;
+}
 
 .contenido{
     position: absolute;
-    height: 100vh;
+    height: 600px;
     width: 100vw;
     overflow: hidden;
     img{
@@ -48,7 +51,8 @@ $font: 'Righteous', cursive;
                 width: 20%;
                 top: 0;
                 left: 0;
-                background-color: $red;
+                background-color: white;
+                border-radius:200px 0 0 200px;
             }
            i{
             font-size: 30px;
@@ -56,7 +60,7 @@ $font: 'Righteous', cursive;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: white;
+            color: $red;
            }
             input{
                 position: absolute;
@@ -65,6 +69,7 @@ $font: 'Righteous', cursive;
                 right: 0;
                 border: none;
                 font-size: 20px;
+                border-radius:0 200px 200px 0;
             }
         }
         
@@ -88,6 +93,7 @@ $font: 'Righteous', cursive;
         padding-bottom: 5px;
         padding-top: 5px;
         letter-spacing: 3px;
+        border-radius: 200px;
     }
     .register{
         position: absolute;
@@ -102,6 +108,7 @@ $font: 'Righteous', cursive;
             padding-bottom: 5px;
             padding-top: 5px;
             letter-spacing: 3px;
+            border-radius: 200px;
 
     }
 }

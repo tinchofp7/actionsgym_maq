@@ -3,6 +3,9 @@
 $red: #e22e0d;
 $font: 'Anton', sans-serif;
 
+*:focus {
+    outline: none;
+}
 
 .menu{
     position: fixed;

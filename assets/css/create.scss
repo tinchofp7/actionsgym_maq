@@ -8,9 +8,13 @@ $font: 'Righteous', cursive;
     font-family: $font;
 }
 
+*:focus {
+    outline: none;
+}
+
 .contenido{
     position: absolute;
-    height: 100vh;
+    height: 600px;
     width: 100vw;
     overflow: hidden;
     img{
@@ -32,7 +36,7 @@ $font: 'Righteous', cursive;
             top: 5%;
             left: 50%;
             transform: translate(-50%, 0);
-            font-size: 50px;
+            font-size: 100px;
             color: white;
         }
         .user, .password, .password2{
@@ -42,25 +46,26 @@ $font: 'Righteous', cursive;
             left: 50%;
             transform: translate(-50%, 0);
             /* background-color: black; */
-            h1{
+            /* h1{
                 text-align: left;
                 font-size: 20px;
                 color: white;
-            }
+            } */
             span{
                 position: absolute;
                 height: 50px;
                 width: 20%;
                 bottom: 0;
                 left: 0;
-                background-color: blue;
+                background-color: white;
+                border-radius: 200px 0px 0px 200px;
                 i{
                     font-size: 30px;
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    color: white;
+                    color: blue;
                    }
             }
            
@@ -72,32 +77,32 @@ $font: 'Righteous', cursive;
                 bottom: 0;
                 border: none;
                 font-size: 20px;
+                border-radius: 0px 200px 200px 0px;
+                
             }
+            ::-webkit-input-placeholder {
+                font-size: 18px;
+              }
+              ::-moz-placeholder {
+                font-size: 18px;
+              }
+              :-ms-input-placeholder {
+                font-size: 18px;
+              }
+              ::placeholder {
+                font-size: 18px;
+              }
         }
         
         .user{
-            top: 20%;
+            top: 25%;
         }
         .password{
             top: 40%;
         }
         .password2{
-            top: 60%;
+            top: 55%;
         }
-    }
-    .login{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        top: 70%;
-        width: 70%;
-        font-size: 30px;
-        border: none;
-        color: white;
-        background-color: $red;
-        padding-bottom: 5px;
-        padding-top: 5px;
-        letter-spacing: 3px;
     }
     .register{
         position: absolute;
@@ -112,6 +117,6 @@ $font: 'Righteous', cursive;
             padding-bottom: 5px;
             padding-top: 5px;
             letter-spacing: 3px;
-
+            border-radius: 200px;
     }
 }

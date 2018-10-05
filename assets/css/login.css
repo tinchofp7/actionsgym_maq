@@ -4,9 +4,12 @@
   margin: 0;
   font-family: "Righteous", cursive; }
 
+*:focus {
+  outline: none; }
+
 .contenido {
   position: absolute;
-  height: 100vh;
+  height: 600px;
   width: 100vw;
   overflow: hidden; }
   .contenido img {
@@ -48,7 +51,8 @@
         width: 20%;
         top: 0;
         left: 0;
-        background-color: #e22e0d; }
+        background-color: white;
+        border-radius: 200px 0 0 200px; }
       .contenido form .user i, .contenido form .password i {
         font-size: 30px;
         position: absolute;
@@ -57,14 +61,15 @@
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        color: white; }
+        color: #e22e0d; }
       .contenido form .user input, .contenido form .password input {
         position: absolute;
         height: 50px;
         width: 80%;
         right: 0;
         border: none;
-        font-size: 20px; }
+        font-size: 20px;
+        border-radius: 0 200px 200px 0; }
     .contenido form .user {
       top: 40%; }
     .contenido form .password {
@@ -83,7 +88,8 @@
     background-color: #e22e0d;
     padding-bottom: 5px;
     padding-top: 5px;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    border-radius: 200px; }
   .contenido .register {
     position: absolute;
     left: 50%;
@@ -98,4 +104,5 @@
     background-color: #007bff;
     padding-bottom: 5px;
     padding-top: 5px;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    border-radius: 200px; }

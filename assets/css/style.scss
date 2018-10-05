@@ -11,6 +11,9 @@ $font: 'Anton', sans-serif;
     margin: 0;
     font-family: $font;
 }
+*:focus {
+    outline: none;
+}
 
 body{
     transition: .5s;

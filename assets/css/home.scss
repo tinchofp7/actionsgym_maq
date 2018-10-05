@@ -1,6 +1,9 @@
 $red: #e22e0d;
 $font: 'Anton', sans-serif;
 
+*:focus {
+    outline: none;
+}
 
 .home {
     background-image: url('../img/fondo6.jpg');
