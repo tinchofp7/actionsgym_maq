@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/miRutina.css">
+    <link rel="stylesheet" href="assets/css/perfil.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
@@ -13,10 +13,10 @@
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="assets/js/effects.js"></script>
-    <title>Document</title>
+    <title>Perfil</title>
 </head>
 <body>
-
+<div class="menus">
     <div class="menu">
         <span class="logo"><i class="fab fa-autoprefixer"></i></span>
         <span class="exit" onclick="window.open('index.html', '_self')"><i class="fas fa-sign-out-alt"></i></span> 
@@ -58,8 +58,28 @@
                 <span>FAQ</span>
             </li>
         </ul>
-
-    
     </div>
+</div>
+        <div class="full-container fondo">
+                        <div class="perfilcamara">
+                                <img class="img-perfil" src="assets/img/profile.jpeg" >
+                                <i class="fas fa-camera-retro"></i>
+                        </div>
+        </div>
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-personales-tab" data-toggle="tab" href="#nav-personales" role="tab" aria-controls="nav-personales" aria-selected="true">Datos Personales</a>
+                  <a class="nav-item nav-link" id="nav-ficha-tab" data-toggle="tab" href="#nav-ficha" role="tab" aria-controls="nav-ficha" aria-selected="false">Ficha Médica</a>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-personales" role="tabpanel" aria-labelledby="nav-personales-tab">
+
+                </div>
+                <div class="tab-pane fade" id="nav-ficha" role="tabpanel" aria-labelledby="nav-ficha-tab">
+
+                </div>
+                
+</div>
 </body>
 </html>
