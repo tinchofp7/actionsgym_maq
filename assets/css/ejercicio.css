@@ -23,7 +23,7 @@
     cursor: pointer; }
     .menu .burger-icon .bar {
       position: absolute;
-      background-color: black;
+      background-color: #212529;
       width: 40px;
       left: 2px;
       height: 7px;
@@ -41,15 +41,17 @@
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-size: 50px; }
+    font-size: 50px;
+    color: white; }
   .menu .exit {
+    color: #212529;
     position: absolute;
-    right: 2px;
+    right: 10px;
     top: 50%;
     -webkit-transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
-    font-size: 50px;
+    font-size: 30px;
     cursor: pointer; }
 
 .menu-lateral {
@@ -150,16 +152,96 @@
 *:focus {
   outline: none; }
 
+.imgeBack {
+  position: absolute;
+  width: 100%;
+  height: 140px;
+  top: 75px;
+  z-index: 3;
+  background-image: url("../img/create.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 -30px;
+  background-size: 140%; }
+
 .header {
-  margin-top: 75px;
-  height: 150px;
-  background-image: url("../img/pesomuerto.jpg"); }
-  .header span {
-    color: white; }
+  position: absolute;
+  width: 100%;
+  height: 140px;
+  top: 75px;
+  z-index: 4;
+  background-color: #21252946; }
+  .header h3 {
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-left: 10px; }
+    .header h3 span {
+      line-height: 80px;
+      font-size: 45px; }
   .header .btn-info {
     position: absolute;
-    top: 175px;
     right: 0;
-    height: 50px;
-    background-color: #e22e0d;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    background-color: transparent;
     border: none; }
+    .header .btn-info i {
+      color: white;
+      padding: 0;
+      margin: 0;
+      font-size: 50px; }
+
+.modal-body img {
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  padding-bottom: 20px; }
+
+.modal-body p {
+  text-align: justify;
+  text-justify: inter-word; }
+
+.table {
+  padding-bottom: 200px;
+  /* min-height: calc(100% - 75px - 140px - 40px - 50px); */
+  position: absolute;
+  top: 215px;
+  text-align: center; }
+  .table tbody tr td input {
+    border: none;
+    /* background-color: #21252923; */ }
+
+#add_row, #delete_row {
+  text-align: center;
+  position: fixed;
+  z-index: 5;
+  bottom: 50px;
+  width: 50%;
+  height: 40px;
+  color: white;
+  border-radius: 0;
+  background-color: #e22e0d; }
+
+#add_row {
+  left: 0; }
+
+#delete_row {
+  left: 50%; }
+
+.finish {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #212529;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px; }

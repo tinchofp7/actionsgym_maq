@@ -59,38 +59,78 @@
         </ul>
     </div>
 
+    <!-- imagen del banner superiro -->
+    <div class="full-container imgeBack"></div>
 
+    <!-- texto y botones del banner -->
+    <div class="full-container header">
+        <h3>Semana1 / Dia 1 <br> <span>Peso Muerto</span></h3>
 
-    <div class="container header">
-        <span>Peso Muerto</span>
-
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Info</button>
-      
-        <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-       <!-- Modal content-->
-       <div class="modal-content">
-        <div class="modal-header">
-            <h4 class="modal-title">Intructivo Ejercicio</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          
-        </div>
-        <div class="modal-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim sagittis ornare. Cras scelerisque massa nec nisi malesuada, quis lobortis mauris consequat. Donec quis ligula at eros porttitor ultrices in at odio. Sed ut erat sit amet metus porta tristique quis non lectus. Suspendisse id convallis felis. Quisque ut aliquet ipsum. Curabitur pretium mauris id enim fringilla, vitae suscipit ante euismod. Pellentesque tincidunt in sem nec auctor. Cras lobortis consectetur elit, sit amet tincidunt ligula pretium ac. Praesent bibendum pulvinar lacus, ut bibendum sapien suscipit ac. Suspendisse pellentesque ligula tortor, vitae aliquet purus egestas ultricies. Nunc sagittis quam in suscipit feugiat.
-
-                Fusce in commodo tortor. Vestibulum mollis nisl sem, a sollicitudin lacus pellentesque a. Morbi euismod enim id iaculis convallis. Praesent ut felis efficitur, condimentum dui sed, blandit enim. Nulla ultricies tempor diam nec molestie. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus nec eleifend odio, in sollicitudin enim. Pellentesque eleifend consectetur pretium. Integer sed rutrum nisl. Aliquam nulla libero, dignissim egestas volutpat sit amet, fermentum vitae nisi.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
+        <button type="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#infoEj">
+            <i class="fas fa-info-circle"></i>
+        </button>
+        
     </div>
-  </div>
-  
-</div>
 
+    <!-- Modal con la info del ejercicio-->
+    <div class="modal fade" id="infoEj" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Intructivo Ejercicio</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                        <img src="assets/gif/pesoMuerto.gif" alt="" srcset="">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim sagittis ornare. Cras scelerisque massa nec nisi malesuada, quis lobortis mauris consequat. Donec quis ligula at eros porttitor ultrices in at odio. Sed ut erat sit amet metus porta tristique quis non lectus. Suspendisse id convallis felis. Quisque ut aliquet ipsum. Curabitur pretium mauris id enim fringilla, vitae suscipit ante euismod. Pellentesque tincidunt in sem nec auctor. Cras lobortis consectetur elit, sit amet tincidunt ligula pretium ac. Praesent bibendum pulvinar lacus, ut bibendum sapien suscipit ac. Suspendisse pellentesque ligula tortor, vitae aliquet purus egestas ultricies. Nunc sagittis quam in suscipit feugiat.
+                        Fusce in commodo tortor. Vestibulum mollis nisl sem, a sollicitudin lacus pellentesque a. Morbi euismod enim id iaculis convallis. Praesent ut felis efficitur, condimentum dui sed, blandit enim. Nulla ultricies tempor diam nec molestie. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus nec eleifend odio, in sollicitudin enim. Pellentesque eleifend consectetur pretium. Integer sed rutrum nisl. Aliquam nulla libero, dignissim egestas volutpat sit amet, fermentum vitae nisi.
+                    </p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table" id="tab_logic" >
+        <thead>
+            <tr>
+                <th scope="col">Serie</th>
+                <th scope="col">Repeticion</th>
+                <th scope="col">Peso[kg]</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id='addr0'>
+            <tr>
+                <th scope="row">1</th>
+                <td><input type="number" name="rep1" id="rep1" min="1" max="100"></td>
+                <td><input type="number" name="peso1" id="peso1" min="1" max="100"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td><input type="number" name="rep2" id="rep2" min="1" max="100"></td>
+                <td><input type="number" name="peso1" id="peso1" min="1" max="100"></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td><input type="number" name="rep3" id="rep3" min="1" max="100"></td>
+                <td><input type="number" name="peso1" id="peso1" min="1" max="100"></td>
+            </tr>
+            <tr id='addr3'></tr>
+        </tbody>
+    </table>
+
+    <a id="add_row" class="btn btn-default pull-left"><i class="fas fa-plus"></i></a>
+    <a id='delete_row' class="pull-right btn btn-default"><i class="fas fa-minus"></i></a>
+
+    <span class="finish">Listo</span>
+    
 </body>
 </html>

@@ -83,7 +83,7 @@
     cursor: pointer; }
     .menu .burger-icon .bar {
       position: absolute;
-      background-color: black;
+      background-color: #212529;
       width: 40px;
       left: 2px;
       height: 7px;
@@ -101,15 +101,17 @@
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-size: 50px; }
+    font-size: 50px;
+    color: white; }
   .menu .exit {
+    color: #212529;
     position: absolute;
-    right: 2px;
+    right: 10px;
     top: 50%;
     -webkit-transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
-    font-size: 50px;
+    font-size: 30px;
     cursor: pointer; }
 
 .menu-lateral {
