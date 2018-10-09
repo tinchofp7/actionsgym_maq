@@ -83,7 +83,7 @@
     cursor: pointer; }
     .menu .burger-icon .bar {
       position: absolute;
-      background-color: white;
+      background-color: black;
       width: 40px;
       left: 2px;
       height: 7px;

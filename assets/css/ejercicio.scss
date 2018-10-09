@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import 'menu.scss';
+
+$red: #e22e0d;
+$font: 'Josefin Sans', sans-serif;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: $font;
+}
+*:focus {
+    outline: none;
+}
+
+.header{
+    margin-top: 75px;
+    height: 150px;
+    background-image: url('../img/pesomuerto.jpg');
+    span{
+        color: white;
+    }
+    .btn-info{
+        position: absolute;
+        top: 175px;
+        right: 0;
+        height: 50px;
+        background-color: $red;
+        border: none;
+    }
+}

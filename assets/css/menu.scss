@@ -26,7 +26,7 @@ $font: 'Anton', sans-serif;
         cursor: pointer;
         .bar{
             position: absolute;
-            background-color: white;
+            background-color: black;
             width: 40px;
             left: 2px;
             height: 7px;
@@ -42,7 +42,6 @@ $font: 'Anton', sans-serif;
             top: 35px;
         }
     }
-    
     .logo{
         position: absolute;
         left: 50%;
@@ -59,7 +58,6 @@ $font: 'Anton', sans-serif;
         cursor: pointer;
     }
 }
-
 .menu-lateral{
     position: absolute;
     z-index: 100;
