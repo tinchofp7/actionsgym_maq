@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
 
 $red: #e22e0d;
+$grey: #212529;
 $font: 'Anton', sans-serif;
 
 *:focus {
@@ -26,7 +27,7 @@ $font: 'Anton', sans-serif;
         cursor: pointer;
         .bar{
             position: absolute;
-            background-color: black;
+            background-color: $grey;
             width: 40px;
             left: 2px;
             height: 7px;
@@ -48,13 +49,15 @@ $font: 'Anton', sans-serif;
         top: 50%;
         transform: translate(-50%, -50%);
         font-size: 50px;
+        color: white;
     }
     .exit{
+        color: $grey;
         position: absolute;
-        right: 2px;
+        right: 10px;
         top: 50%;
         transform: translate(0%, -50%);
-        font-size: 50px;
+        font-size: 30px;
         cursor: pointer;
     }
 }
