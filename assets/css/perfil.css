@@ -134,10 +134,14 @@
 
 nav {
   position: absolute;
-  top: 50%; }
+  top: 46%;
+  background-color: green;
+  margin-top: 0%;
+  width: 100%; }
 
 .nav-link {
-  width: 50%; }
+  width: 50%;
+  text-align: center; }
 
 .fondo {
   position: absolute;
@@ -151,22 +155,20 @@ nav {
   .fondo .perfilcamara {
     width: 100px;
     height: 100px;
-    -webkit-transform: translate(150%, 120%);
-    -ms-transform: translate(150%, 120%);
-    transform: translate(150%, 120%);
+    -webkit-transform: translate(150%, 50%);
+    -ms-transform: translate(150%, 50%);
+    transform: translate(150%, 50%);
     position: absolute; }
     .fondo .perfilcamara .img-perfil {
       position: absolute;
       border-radius: 50%;
       border-style: solid;
       border-color: white;
-      border-width: 5px;
+      border-width: 3px;
       width: 100%;
       height: 100%; }
-    .fondo .perfilcamara .fa-camera-retro {
+    .fondo .perfilcamara .camera-change {
+      width: 30%;
       position: absolute;
-      border-radius: 50%;
-      background-color: white;
-      font-size: 30px;
       bottom: 0%;
       right: 0%; }
