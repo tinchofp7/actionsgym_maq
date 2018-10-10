@@ -14,13 +14,13 @@ $font: 'Righteous', cursive;
 
 .contenido{
     position: absolute;
-    height: 600px;
+    height: 100vh;
     width: 100vw;
     overflow: hidden;
     img{
         position: absolute;
         top: 0;
-        right: -350px;
+        right: -400px;
         height: 100%;
     }
     form{

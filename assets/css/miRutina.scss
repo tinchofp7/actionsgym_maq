@@ -51,14 +51,20 @@ body{
         background: none;
         box-shadow: 0 0 16px #000, 0 0 32px #000;
       }
-
-      i{
-          font-size: 70px;
-          position: absolute;
-          right: 0;
-          top: 90px;
-          color: white;
-      }
+    .fa-angle-left{
+        font-size: 70px;
+        position: absolute;
+        left: 0;
+        top: 90px;
+        color: white;
+    }
+    .fa-angle-right{
+        font-size: 70px;
+        position: absolute;
+        right: 0;
+        top: 90px;
+        color: white;
+    }
 }
 
 .dia{
@@ -109,4 +115,11 @@ body{
     .ultimoE{
         border-bottom: 0;
     }
+}
+
+.semana2{
+    display: none;
+}
+.semana3{
+    display: none;
 }
