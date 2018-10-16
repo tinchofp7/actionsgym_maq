@@ -70,7 +70,7 @@ $font: 'Anton', sans-serif;
     top: 0;
     left: -100%;
     background-color: black;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     transition: .5s;
     /* cross */
@@ -103,6 +103,7 @@ $font: 'Anton', sans-serif;
         left: 0;
         top: 180px;
         color: white;
+        list-style: none;
         li{
             position: relative;
             height: calc(100% / 6 );
@@ -111,7 +112,7 @@ $font: 'Anton', sans-serif;
             font-size: 30px;
             i{
                 position: absolute;
-                left: 30%;
+                left: 25%;
                 height: 50px;
                 width: 50px;
                 top: 50%;
@@ -120,7 +121,7 @@ $font: 'Anton', sans-serif;
             }
             span{
                 position: absolute;
-                left: 47%;
+                left: 50%;
                 top: 50%;
                 transform: translate(0, -50%);
             }

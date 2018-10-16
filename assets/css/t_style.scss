@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import 'menu.scss';
+
+$red: #e22e0d;
+$grey:#687480;
+$font: 'Josefin Sans', sans-serif;
+
+*{
+    font-family: $font;
+}
+
+/* body{
+    background-color: $grey;
+} */
+
+.buscador{
+    position: relative;
+    top: 75px;
+    width: 100%;
+    padding-top: 30px;
+    h2{
+        margin-left: 5%;
+        color: $grey;
+        text-transform: uppercase;
+    }
+    #myInput {
+        background-image: url('../img/lupa2.png');
+        background-size: auto 70%;
+        background-position: 96% 6px;
+        background-repeat: no-repeat;
+        width: 90%;
+        font-size: 16px;
+        padding: 12px 50px 12px 20px;
+        border: 1px solid #ddd;
+        margin-left: 5%;
+        margin-bottom: 20px;
+        border-radius: 200px;
+      }
+      
+      #listClient {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        width: 90%;
+        margin-left: 5%;
+        li{
+            a{
+                //border: 1px solid #ddd;
+                //margin-top: -1px; /* Prevent double borders */
+                background-color: #f6f6f6;
+                padding: 12px;
+                margin-bottom: 10px;
+                text-decoration: none;
+                font-size: 18px;
+                color: $grey;
+                display: block;
+                border-radius: 200px;
+                width: 100%;
+            }
+            a:hover:not(.header) {
+                background-color: #eee;
+              }
+        }
+      }
+      
+    
+}
