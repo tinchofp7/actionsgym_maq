@@ -1,12 +1,21 @@
 function openMenu(){
     var a = document.getElementsByClassName('menu-lateral')[0];
     a.style.left = "0";
+
+    document.body.style.overflow = "hidden";
+    window.scroll({top: 0, left: 0, behavior: 'smooth' });
+    //document.body.scrollTop = 0; // For Safari
+    //document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
 
 function closeMenu(){
     var a = document.getElementsByClassName('menu-lateral')[0];
-    a.style.left = "-75%";
+    a.style.left = "-100%";
+
+    document.body.style.overflow = "auto";
 }
+
 
 function showExercise(){
     var acc = document.getElementsByClassName("dia");

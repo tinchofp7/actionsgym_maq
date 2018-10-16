@@ -68,10 +68,10 @@ $font: 'Anton', sans-serif;
     position: absolute;
     z-index: 100;
     top: 0;
-    left: -75%;
+    left: -100%;
     background-color: black;
-    height: 100vh;
-    width: 75%;
+    height: 100%;
+    width: 100%;
     transition: .5s;
     /* cross */
     i{
@@ -111,7 +111,7 @@ $font: 'Anton', sans-serif;
             font-size: 30px;
             i{
                 position: absolute;
-                left: 20%;
+                left: 30%;
                 height: 50px;
                 width: 50px;
                 top: 50%;
@@ -120,7 +120,7 @@ $font: 'Anton', sans-serif;
             }
             span{
                 position: absolute;
-                left: 50%;
+                left: 47%;
                 top: 50%;
                 transform: translate(0, -50%);
             }
