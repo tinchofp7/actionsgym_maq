@@ -60,7 +60,7 @@
         </ul>
     </div>
 </div>
-
+    <div class="contenedor">
         <div class="full-container fondo">
                         <div class="perfilcamara">
                                 <img class="img-perfil" src="assets/img/profile.jpeg" >
@@ -75,11 +75,26 @@
               </nav>
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-personales" role="tabpanel" aria-labelledby="nav-personales-tab">
-
+                    Nombre: <span class="editText">Fulanito de tal</span>
                 </div>
                 <div class="tab-pane fade" id="nav-ficha" role="tabpanel" aria-labelledby="nav-ficha-tab">
-
+                    </div> 
                 </div>
                 </div>
+                <script>
+            
+ 
+                        $(function(){
+                            $('.editText').dblclick( function(){
+                                var text = $(this).text();
+                                $(this).empty().html('<input type="text" value="'+text+'">').find('input').focus();
+                            }).keypress( function(e){
+                                if(e.keyCode == 13){
+                                    var text = $('input', this).val();
+                                    $(this).html( text );
+                                }
+                            });
+                        });
+                    </script>
 </body>
 </html>

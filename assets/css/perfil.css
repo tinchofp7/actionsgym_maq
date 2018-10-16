@@ -124,41 +124,43 @@
   padding: 0;
   font-family: "Anton", sans-serif; }
 
-.container {
+.contenedor {
+  position: absolute;
   width: 100%;
-  display: block;
-  height: 100%;
-  margin: 1% 0% 0% 0%;
-  margin-left: 0%;
-  padding: 0%; }
+  height: 100%; }
 
 nav {
-  position: absolute;
-  top: 46%;
-  background-color: green;
-  margin-top: 0%;
-  width: 100%; }
+  background-color: white;
+  bottom: 54%;
+  width: 100%;
+  height: 7%;
+  position: absolute; }
 
-.nav-link {
+.nav-item.nav-link {
+  color: white;
+  background-color: red;
   width: 50%;
+  height: 50px;
+  padding-top: 20px;
   text-align: center; }
 
 .fondo {
   position: absolute;
-  height: 33%;
+  height: 29%;
   width: 100%;
+  background-color: blue;
   margin-top: 75px;
   background-image: url("../img/fondo-perfil.png");
   background-size: 100%;
   background-position: 0px 0px;
   background-repeat: no-repeat; }
   .fondo .perfilcamara {
-    width: 100px;
-    height: 100px;
-    -webkit-transform: translate(150%, 50%);
-    -ms-transform: translate(150%, 50%);
-    transform: translate(150%, 50%);
-    position: absolute; }
+    width: 135px;
+    height: 135px;
+    right: 35%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 1; }
     .fondo .perfilcamara .img-perfil {
       position: absolute;
       border-radius: 50%;
@@ -168,7 +170,11 @@ nav {
       width: 100%;
       height: 100%; }
     .fondo .perfilcamara .camera-change {
-      width: 30%;
+      width: 25%;
       position: absolute;
       bottom: 0%;
       right: 0%; }
+
+span {
+  position: absolute;
+  top: 300px; }
