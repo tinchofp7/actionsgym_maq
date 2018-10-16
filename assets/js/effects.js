@@ -1,3 +1,4 @@
+//De todos los menus
 function openMenu(){
     var a = document.getElementsByClassName('menu-lateral')[0];
     a.style.left = "0";
@@ -7,8 +8,6 @@ function openMenu(){
     //document.body.scrollTop = 0; // For Safari
     //document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-
 function closeMenu(){
     var a = document.getElementsByClassName('menu-lateral')[0];
     a.style.left = "-100%";
@@ -35,7 +34,7 @@ function showExercise(){
 }
 
 
-//revisar
+//revisar ----> mirutina.html
 $(document).ready(function(){
     var i=3;
     
@@ -54,8 +53,35 @@ $(document).ready(function(){
 
 });
 
-
+//mirutina.html
 function cambiarSem(actual, sig){
   $('.semana'+actual).css('display', 'none');
   $('.semana'+sig).css('display', 'block');
+}
+
+// index.html
+function validateUser(){
+  var x = document.getElementById('emailIngreso').value;
+  if(x == 'a'){
+    window.open('home.html', '_self');
+  }else{
+    window.open('t_index.html', '_self');
+  }
+}
+
+//t_index.html
+function searchClient() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("listClient");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+      } else {
+          li[i].style.display = "none";
+      }
+  }
 }
