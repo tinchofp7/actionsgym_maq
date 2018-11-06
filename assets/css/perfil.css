@@ -179,3 +179,50 @@ nav {
 span {
   position: absolute;
   top: 300px; }
+
+.container-formulario {
+  position: absolute;
+  width: 85%;
+  background-color: rgba(245, 247, 241, 0.561);
+  height: 2%;
+  border-radius: 1em;
+  padding: 1% 3% 3% 1%;
+  margin: 70% 7% 5% 7%; }
+  .container-formulario #btn-enviar {
+    background-color: green;
+    color: white;
+    padding: 0.5% 5% 0% 5%;
+    margin-left: 80%;
+    font-size: 29px;
+    position: relative; }
+    @media screen and (max-width: 960px) {
+      .container-formulario #btn-enviar {
+        margin-left: 72%;
+        margin-top: 4%; } }
+    @media screen and (max-width: 576px) {
+      .container-formulario #btn-enviar {
+        margin: auto;
+        display: block;
+        padding: 3% 15% 2% 15%; } }
+  .container-formulario input[type], .container-formulario textarea {
+    background-color: #dbd7d7;
+    width: 100%;
+    height: 55%;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    border-radius: 10px; }
+    @media screen and (max-width: 576px) {
+      .container-formulario input[type], .container-formulario textarea {
+        margin-bottom: 5%; } }
+  .container-formulario input[type]:focus {
+    background-color: white; }
+  .container-formulario input[type=number] {
+    -moz-appearance: textfield; }
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; }
