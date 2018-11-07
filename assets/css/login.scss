@@ -16,7 +16,7 @@ $font: 'Righteous', cursive;
    /*  height: 100%;
     width: 100%; */
     overflow: hidden;
-    img{
+#fondo {
         position: absolute;
         top: 0;
         right: -350px;
@@ -30,13 +30,14 @@ $font: 'Righteous', cursive;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color:#e22d0d6c;
-        i{
+        img{
             position: absolute;
             top: 10%;
             left: 50%;
             transform: translate(-50%, 0);
             font-size: 100px;
             color: white;
+            height: 30%;
         }
         .user, .password{
             position: absolute;
