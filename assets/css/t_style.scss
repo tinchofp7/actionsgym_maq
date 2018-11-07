@@ -41,26 +41,47 @@ $font: 'Josefin Sans', sans-serif;
         list-style-type: none;
         padding: 0;
         margin: 0;
-
         width: 90%;
         margin-left: 5%;
         li{
-            a{
-                //border: 1px solid #ddd;
-                //margin-top: -1px; /* Prevent double borders */
+            width: 100%;
+            margin-left: 0%;
+            .nombre{
+                height: 50px;
+                width: 70%;
+                border-radius: 200px 0 0 200px;
+
                 background-color: #f6f6f6;
-                padding: 12px;
+                padding: 12px  0 12px 12px;
                 margin-bottom: 10px;
                 text-decoration: none;
                 font-size: 18px;
                 color: $grey;
-                display: block;
-                border-radius: 200px;
-                width: 100%;
+                
             }
-            a:hover:not(.header) {
-                background-color: #eee;
-              }
+            
+            .icono1{
+                width: 15%;
+                height: 50px;
+                background-color: #f6f6f6;
+                color: $red;
+                /* border-radius: 0px 200px 200px 0px; */
+                text-decoration: none;
+                line-height: 50px;
+                text-align: center;
+                font-size: 20px;
+            }
+            .icono2{
+                width: 15%;
+                height: 50px;
+                background-color: #f6f6f6;
+                color: $red;
+                border-radius: 0px 200px 200px 0px;
+                text-decoration: none;
+                line-height: 50px;
+                text-align: center;
+                font-size: 20px;
+            }
         }
       }
       

@@ -85,3 +85,20 @@ function searchClient() {
       }
   }
 }
+
+
+//para todos
+window.onload = function() {
+  var w = window.innerWidth
+  || document.documentElement.clientWidth
+  || document.body.clientWidth;
+  
+  var h = window.innerHeight
+  || document.documentElement.clientHeight
+  || document.body.clientHeight;
+
+  document.getElementsByClassName("contenido")[0].style.height = h+'px';
+  document.getElementsByClassName("contenido")[0].style.width = w+'px';
+  
+
+};
