@@ -60,6 +60,9 @@
     -webkit-box-shadow: 0 0 16px #000, 0 0 32px #000;
     box-shadow: 0 0 16px #000, 0 0 32px #000; }
 
+img {
+  margin-top: 25%; }
+
 *:focus {
   outline: none; }
 
